@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eden Hotel (1898) - Historia, Belle Époque y Paseo de Terror | La Falda, Córdoba</title>
+  <meta name="description" content="Sitio oficial conmemorativo del Eden Hotel en La Falda, Córdoba. Historia, arquitectura de la Belle Époque, huéspedes ilustres, archivos desclasificados y el legendario Paseo de Terror nocturno en oscuridad total.">
+  
+  <!-- Tipografías Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;800;900&family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Montserrat:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Special+Elite&display=swap" rel="stylesheet">
+  
+  <!-- Estilos Principales -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ========================================================================
+       BARRA DE NAVEGACIÓN PRINCIPAL
+       ======================================================================== -->
+  <header class="main-header">
+    <div class="container navbar">
+      <a href="#inicio" class="brand">
+        <div class="brand-emblem">EH</div>
+        <div class="brand-info">
+          <span class="brand-title">EDEN HOTEL</span>
+          <span class="brand-subtitle">1898 · La Falda</span>
+        </div>
+      </a>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#inicio" class="nav-link">Inicio</a></li>
+          <li><a href="#historia" class="nav-link">Historia</a></li>
+          <li><a href="#arquitectura" class="nav-link">Belle Époque</a></li>
+          <li><a href="#huespedes" class="nav-link">Ilustres</a></li>
+          <li><a href="#archivos" class="nav-link">Archivos FBI</a></li>
+          <li><a href="#galeria" class="nav-link">Galería</a></li>
+          <li><a href="#contacto" class="nav-link">Ubicación</a></li>
+          <li class="nav-mobile-only">
+            <a href="#terror-section" class="btn btn-nav btn-terror" style="width: 100%;">
+              <span>🔦</span> Paseo de Terror
+            </a>
+          </li>
+          <li class="nav-mobile-only">
+            <button class="btn btn-nav btn-vintage-primary" style="width: 100%;" onclick="handleSmartContact('Hola, quisiera consultar por visitas al Hotel Edén')">
+              <span>💬</span> WhatsApp / Tel
+            </button>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Botones de Acción con Altura y Espaciado Unificados -->
+      <div class="nav-actions">
+        <a href="#terror-section" class="btn btn-nav btn-terror nav-desktop-only">
+          <span>🔦</span> Paseo de Terror
+        </a>
+        <button class="btn btn-nav btn-vintage-primary nav-desktop-only" onclick="handleSmartContact('Hola, quisiera consultar por visitas al Hotel Edén')">
+          <span>💬</span> WhatsApp / Tel
+        </button>
+        <button class="btn btn-nav btn-whatsapp-smart nav-mobile-quick-btn" onclick="handleSmartContact()" title="WhatsApp">
+          <span>💬</span>
+        </button>
+        <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">
+          ☰
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========================================================================
+       HERO SECTION (AÑOS DORADOS - BELLE ÉPOQUE)
+       ======================================================================== -->
+  <section id="inicio" class="hero-section">
+    <div class="hero-overlay-vintage"></div>
+    <div class="container hero-content">
+      <div class="hero-seal">
+        <span>🏛️</span> Monumento Histórico Municipal · Fundado en 1898
+      </div>
+
+      <h1 class="hero-title">EDEN HOTEL</h1>
+      <p class="hero-original-note">(Eden sin tilde, tal como fue bautizado en sus documentos originales de 1898)</p>
+
+      <p class="hero-tagline">
+        Cuna de la aristocracia internacional, refugio de presidentes, nobles y leyendas. 
+        El majestuoso palacio que dio origen y vida a la ciudad de La Falda en el corazón de las sierras de Córdoba.
+      </p>
+
+      <div class="hero-meta-badges">
+        <div class="meta-badge">
+          <span class="badge-val">1898</span>
+          <span class="badge-lbl">Inauguración</span>
+        </div>
+        <div class="meta-badge">
+          <span class="badge-val">100</span>
+          <span class="badge-lbl">Habitaciones</span>
+        </div>
+        <div class="meta-badge">
+          <span class="badge-val">1965</span>
+          <span class="badge-lbl">Cierre Definitivo</span>
+        </div>
+        <div class="meta-badge">
+          <span class="badge-val">1998</span>
+          <span class="badge-lbl">Rescate Municipal</span>
+        </div>
+        <div class="meta-badge">
+          <span class="badge-val">1.000 m</span>
+          <span class="badge-lbl">Clima de Altura</span>
+        </div>
+      </div>
+
+      <!-- Botones Gemelos con Altura y Ancho Estandarizados (Sin desbordes) -->
+      <div class="hero-actions">
+        <a href="#historia" class="btn btn-hero btn-vintage-outline">
+          <span>🏛️</span> Hotel Edén
+        </a>
+        <a href="#terror-section" class="btn btn-hero btn-terror">
+          <span>🔦</span> Paseo de Terror
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       SECCIÓN HISTORIA & ORÍGENES (ESTILO PERGAMINO AÑEJO)
+       ======================================================================== -->
+  <section id="historia" class="section-aged">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-pretitle">Crónica de una Época Inolvidable</span>
+        <h2 class="section-title">El Origen que Fundó una Ciudad</h2>
+        <div class="ornament-divider"><span>◆</span></div>
+        <p class="section-desc">
+          Más que un hospedaje, el Eden Hotel fue el núcleo civilizador que transformó un paraje agreste 
+          al pie del cerro El Cuadrado en la prestigiosa ciudad de La Falda.
+        </p>
+      </div>
+
+      <div class="history-intro-grid">
+        <div class="parchment-frame">
+          <img src="images/fachada-fuente-leon.jpg" alt="Fachada del Hotel Edén con estatua de león y fuente de mármol">
+          <p class="parchment-frame-caption">Fachada imperial al atardecer: fuente de mármol y leones custodios traídos de Europa.</p>
+        </div>
+
+        <div class="history-text-block">
+          <h3>Un Sueño Forjado entre Europa y las Sierras</h3>
+          <p>
+            El <strong>19 de agosto de 1897</strong>, Roberto Bahlcke —exoficial del ejército alemán radicado en Córdoba desde 1890— 
+            adquirió la Estancia La Falda de La Higuera, compuesta por 900 hectáreas en lo que entonces era Huerta Grande.
+          </p>
+          <p>
+            Para hacer realidad un hotel de lujo sin precedentes, Bahlcke se asoció con <strong>Juan Kurth</strong> (cónsul de Suiza y fundador de la Bolsa de Comercio de Córdoba) 
+            y la empresaria alemana <strong>María Herbert de Kreautner</strong>, contando con un cuantioso crédito concedido por <strong>Ernesto Tornquist</strong>, célebre banquero y dueño de la Refinería Argentina de Azúcar en Rosario.
+          </p>
+          <div class="quote-aged">
+            "Casi 5.000 toneladas de materiales importados comenzaron a llegar en tren a una estación a 6 km, siendo trasladadas a lomo de bueyes hasta los pies del cerro El Cuadrado. En enero de 1898, con apenas la mitad de la obra en pie, llegaron sus primeros huéspedes."
+          </div>
+          <p>
+            En 1912, la administradora María Herbert vendió la propiedad a los hermanos <strong>Walter y Bruno Eichhorn</strong> por m$n 450.000. Para cancelar las deudas hipotecarias, dos años después los hermanos resolvieron <strong>lotear la estancia</strong>: ese histórico fraccionamiento de tierras marcó el nacimiento oficial del pueblo y futura ciudad de <strong>La Falda</strong>.
+          </p>
+        </div>
+      </div>
+
+      <!-- Línea de Tiempo Cronológica -->
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-year">1897</span>
+            <h4>Compra y Fundación</h4>
+            <p>Roberto Bahlcke, Juan Kurth y María Herbert de Kreautner adquieren 900 hectáreas e inician la faraónica construcción con crédito de Ernesto Tornquist.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-year">1898</span>
+            <h4>Inauguración Triunfal</h4>
+            <p>En enero arriban los primeros pasajeros aristocráticos, deslumbrados por el clima serrano y el confort importado del viejo continente.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-year">1904</span>
+            <h4>Gestión María Herbert</h4>
+            <p>La sociedad se disuelve y María Herbert toma el control absoluto, realizando giras de promoción por toda Europa que colman las temporadas de invierno y verano.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-year">1912 - 1914</span>
+            <h4>La Era Eichhorn &amp; Nace La Falda</h4>
+            <p>Walter y Bruno Eichhorn compran el hotel. El loteo de tierras para solventar compromisos financieros da inicio formal a la localidad de La Falda.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-year">1945</span>
+            <h4>Incautación de Guerra</h4>
+            <p>Cuando Argentina declara la guerra a las potencias del Eje, el Estado confisca el hotel y lo utiliza como centro de reclusión de lujo para diplomáticos japoneses.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-year">1947 - 1965</span>
+            <h4>Tres K, Remate y Ocaso</h4>
+            <p>Devuelto bajo el mandato de Perón, pasa a manos de la firma Tres K (vinculada a Juan Duarte). Tras deudas y remates, la temporada de 1965 sella el cierre definitivo de sus puertas.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-year">1988 - 1998</span>
+            <h4>Monumento Histórico &amp; Resurgir</h4>
+            <p>Declarado Monumento Histórico Municipal en 1988 y comprado por el Municipio de La Falda en 1998, devolviendo su esplendor al turismo nacional e internacional.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       SECCIÓN CARACTERÍSTICAS & ARQUITECTURA (BELLE ÉPOQUE)
+       ======================================================================== -->
+  <section id="arquitectura" class="section-aged-alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-pretitle">Autosuficiencia y Opulencia</span>
+        <h2 class="section-title">El Palacio de la Belle Époque</h2>
+        <div class="ornament-divider"><span>◆</span></div>
+        <p class="section-desc">
+          Concebido como un santuario de descanso y sanación para la élite mundial. Su aire puro serrano 
+          era recomendado contra la tuberculosis, mientras los viajeros del hemisferio norte escapaban al crudo invierno boreal.
+        </p>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon-box">🏰</div>
+          <h3>100 Habitaciones y Salones</h3>
+          <p>
+            Originalmente dotado de dos plantas, 100 aposentos y 4 baños, fue ampliado luego a 38 baños completos, 
+            dos jardines de invierno, sala de lectura, bar selecto, galería techada y majestuosos balcones con vista panorámica.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon-box">🍽️</div>
+          <h3>Comedor para 250 Comensales</h3>
+          <p>
+            Inmenso salón comedor principal con capacidad para 250 personas, sumado a un comedor auxiliar exclusivo 
+            para infantes y personal de servicio doméstico con riguroso protocolo de atención.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon-box">💎</div>
+          <h3>Tesoros de Art Nouveau</h3>
+          <p>
+            Mobiliario exclusivo, vajilla de porcelana, cristalería de Murano, platería fina, alfombras persas, pianos de cola, 
+            esculturas y pinturas europeas que respondían a la vanguardia artística de principios del siglo XX.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon-box">⚡</div>
+          <h3>Autosuficiencia Absoluta</h3>
+          <p>
+            Funcionaba con la independencia de las grandes estancias: usina eléctrica propia pionera en la región, 
+            calefacción centralizada a vapor, talleres mecánicos, quinta de frutas y corrales para abastecimiento directo de alimentos frescos.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon-box">⛳</div>
+          <h3>Deportes y Entretenimiento</h3>
+          <p>
+            Campo de golf reglamentario de 18 hoyos, pileta de natación olímpica provista por vertientes naturales puras de montaña, 
+            canchas de tenis de polvo de ladrillo y dependencia bancaria propia en sus galerías.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon-box">🐎</div>
+          <h3>Caballerizas y Cacerías</h3>
+          <p>
+            Caballos de pura raza criados en sus establos para cabalgatas por las quebradas y tradicionales cacerías 
+            del zorro al más estricto estilo señorial británico.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon-box">🍷</div>
+          <h3>Bailes de Rigurosa Etiqueta</h3>
+          <p>
+            Todas las noches de la temporada se celebraban recepciones y bailes de frac y traje de gala. 
+            En las mesas se descorchaban selectos vinos del Rin combinados con agua pura de vertientes serranas.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon-box">🌳</div>
+          <h3>Parque y Fuente de Leones</h3>
+          <p>
+            Un parque monumental forestado con miles de ejemplares arbóreos traídos en barco desde Europa, 
+            centrado por una fuente de mármol de Carrara escoltada por dos imponentes leones esculpidos.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       SECCIÓN HUÉSPEDES ILUSTRES Y CÉLEBRES VISITANTES
+       ======================================================================== -->
+  <section id="huespedes" class="section-aged">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-pretitle">El Libro de Oro del Hotel</span>
+        <h2 class="section-title">Personalidades que Hicieron Historia</h2>
+        <div class="ornament-divider"><span>◆</span></div>
+        <p class="section-desc">
+          Reyes, jefes de estado, genios de la ciencia y poetas inmortales caminaron por las galerías del Eden Hotel.
+        </p>
+      </div>
+
+      <!-- Filtros -->
+      <div class="guests-tabs">
+        <button class="tab-btn active" data-filter="all">Todas las Figuras</button>
+        <button class="tab-btn" data-filter="presidentes">Presidentes</button>
+        <button class="tab-btn" data-filter="realeza">Nobleza Europea</button>
+        <button class="tab-btn" data-filter="cultura">Cultura y Artes</button>
+        <button class="tab-btn" data-filter="ciencia">Ciencia y Pensamiento</button>
+      </div>
+
+      <div class="guests-grid">
+        <!-- Presidentes -->
+        <div class="guest-card" data-category="presidentes">
+          <div class="guest-avatar-box">🏛️</div>
+          <span class="guest-category">Presidente de la Nación</span>
+          <h4 class="guest-name">Julio Argentino Roca</h4>
+          <p class="guest-desc">Huésped predilecto durante sus períodos de descanso, disfrutando del retiro serrano y las cabalgatas.</p>
+        </div>
+
+        <div class="guest-card" data-category="presidentes">
+          <div class="guest-avatar-box">🏛️</div>
+          <span class="guest-category">Presidente de la Nación</span>
+          <h4 class="guest-name">José Figueroa Alcorta</h4>
+          <p class="guest-desc">Frecuente habitante de las suites de honor durante su mandato presidencial a principios del siglo XX.</p>
+        </div>
+
+        <div class="guest-card" data-category="presidentes">
+          <div class="guest-avatar-box">🏛️</div>
+          <span class="guest-category">Presidente de la Nación</span>
+          <h4 class="guest-name">Agustín P. Justo</h4>
+          <p class="guest-desc">Encuentros diplomáticos y temporadas estivales en las instalaciones exclusivas del Eden.</p>
+        </div>
+
+        <div class="guest-card" data-category="presidentes">
+          <div class="guest-avatar-box">🏛️</div>
+          <span class="guest-category">Presidente de la Nación</span>
+          <h4 class="guest-name">Roberto M. Ortiz</h4>
+          <p class="guest-desc">Buscó en el microclima de La Falda alivio para su delicada salud durante su presidencia.</p>
+        </div>
+
+        <!-- Realeza -->
+        <div class="guest-card" data-category="realeza">
+          <div class="guest-avatar-box">👑</div>
+          <span class="guest-category">Nobleza Europea</span>
+          <h4 class="guest-name">Eduardo de Windsor</h4>
+          <p class="guest-desc">Príncipe de Gales (luego Rey Eduardo VIII del Reino Unido), alojado durante su trascendente gira por Argentina.</p>
+        </div>
+
+        <div class="guest-card" data-category="realeza">
+          <div class="guest-avatar-box">👑</div>
+          <span class="guest-category">Nobleza Europea</span>
+          <h4 class="guest-name">Humberto II de Italia</h4>
+          <p class="guest-desc">Duque de Saboya y último rey de Italia, quien disfrutó de la gastronomía y los bailes de salón.</p>
+        </div>
+
+        <!-- Cultura -->
+        <div class="guest-card" data-category="cultura">
+          <div class="guest-avatar-box">✍️</div>
+          <span class="guest-category">Letras Hispanoamericanas</span>
+          <h4 class="guest-name">Rubén Darío</h4>
+          <p class="guest-desc">El padre del Modernismo literario encontró inspiración poética en la serenidad de sus jardines y pinares.</p>
+        </div>
+
+        <div class="guest-card" data-category="cultura">
+          <div class="guest-avatar-box">🎼</div>
+          <span class="guest-category">Música y Dirección</span>
+          <h4 class="guest-name">Arturo Toscanini</h4>
+          <p class="guest-desc">El mítico director de orquesta italiano, figura sublime en los pianos de concierto del hotel.</p>
+        </div>
+
+        <div class="guest-card" data-category="cultura">
+          <div class="guest-avatar-box">🎭</div>
+          <span class="guest-category">Artes Escénicas</span>
+          <h4 class="guest-name">Berta Singerman</h4>
+          <p class="guest-desc">Aclamada recitadora y actriz dramática que deleitó a los concurrentes de la alta sociedad.</p>
+        </div>
+
+        <!-- Ciencia y Visitantes -->
+        <div class="guest-card" data-category="ciencia">
+          <div class="guest-avatar-box">⚡</div>
+          <span class="guest-category">Física e Invención</span>
+          <h4 class="guest-name">Nikola Tesla</h4>
+          <p class="guest-desc">Mencionado entre las personalidades insignes que recorrieron con admiración sus instalaciones.</p>
+        </div>
+
+        <div class="guest-card" data-category="ciencia">
+          <div class="guest-avatar-box">🏍️</div>
+          <span class="guest-category">Historia Contemporánea</span>
+          <h4 class="guest-name">Ernesto "Che" Guevara</h4>
+          <p class="guest-desc">Visitó el hotel durante sus travesías de juventud por el Valle de Punilla, atraído por el clima beneficioso para el asma.</p>
+        </div>
+      </div>
+
+      <!-- Albert Einstein Highlight -->
+      <div class="einstein-highlight">
+        <div class="einstein-badge-icon">⚛️</div>
+        <div class="einstein-text">
+          <h4>El Banquete de Honor a Albert Einstein</h4>
+          <p>
+            En 1925, durante su histórica visita a la Argentina, el Premio Nobel de Física <strong>Albert Einstein</strong> 
+            fue agasajado en las escalinatas principales del Hotel Edén con un fastuoso banquete ofrecido en su honor por las 
+            máximas autoridades de la Facultad de Derecho y Ciencias Sociales de la Universidad Nacional de Córdoba.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       ARCHIVOS SECRETOS: LA CONEXIÓN CON EL TERCER REICH
+       ======================================================================== -->
+  <section id="archivos" class="classified-section">
+    <div class="container">
+      <div class="classified-header">
+        <div class="classified-stamp">ARCHIVO DESCLASIFICADO · FBI 1995</div>
+        <h2 class="classified-title">La Conexión Secreta con Berlín</h2>
+        <p class="classified-subtitle">Documentación oficial de inteligencia norteamericana sobre Walter e Ida Eichhorn</p>
+      </div>
+
+      <div class="dossier-grid">
+        <div class="dossier-card">
+          <h4>El Informe Desclasificado de J. Edgar Hoover</h4>
+          <p>
+            El <strong>17 de septiembre de 1945</strong>, el director del FBI John Edgar Hoover suscribió un reporte confidencial 
+            proveniente de la Office of Strategic Services (OSS) que investigó en detalle las actividades del matrimonio Eichhorn:
+          </p>
+          <div class="fbi-quote-box">
+            "La señora Eichhorn colocó íntegramente su cuenta bancaria (30.000 marcos) a disposición de Goebbels antes del ascenso nazi. Hitler nunca olvidó este acto... Solían convivir en el mismo hotel en ocasión del Parteitag anual y tenían permitido ingresar a las habitaciones privadas del Führer en todo momento sin anunciarse. Si Hitler tuviera dificultades, encontraría un refugio seguro ya preparado en La Falda."
+          </div>
+          <p>
+            En 1925 los dueños recibieron el <strong>ejemplar número 110</strong> de la edición de lujo numerada de <em>Mein Kampf</em> (solo 500 copias para los colaboradores más íntimos).
+          </p>
+          <p>
+            Según testimonios del historiador Carlos Panozzo, <em>"los discursos y arengas de Hitler eran captados por una potente antena de onda corta en el techo del Edén y retransmitidos al pueblo mediante altoparlantes"</em>.
+          </p>
+        </div>
+
+        <div class="dossier-card">
+          <h4>Correspondencia Directa de Adolf Hitler</h4>
+          <p>Cartas conservadas en archivos históricos que testimonian el estrecho vínculo económico y personal:</p>
+          <ul class="letters-list">
+            <li class="letter-item">
+              <span class="letter-date">30 DE ABRIL DE 1928</span>
+              <p class="letter-content">
+                "Querido señor Eichhorn: muchísimas gracias por la carta enviada por usted y su querida esposa, junto con el preparado de ozono que probaré de inmediato... Cariñosos saludos, Adolf Hitler."
+              </p>
+            </li>
+            <li class="letter-item">
+              <span class="letter-date">13 DE FEBRERO DE 1933</span>
+              <p class="letter-content">
+                "Querido señor Eichhorn: gracias por sus felicitaciones por mi elección como canciller. Los viejos amigos son los responsables como yo de esta victoria. Con saludo alemán, Adolf Hitler."
+              </p>
+            </li>
+            <li class="letter-item">
+              <span class="letter-date">15 DE MAYO DE 1935 · CANCILLERÍA DE BERLÍN</span>
+              <p class="letter-content">
+                "Querido camarada Eichhorn: usted junto con su esposa ha apoyado al movimiento con enorme espíritu de sacrificio... fue su ayuda económica la que me permitió seguir guiando la organización." — <em>Diploma manuscrito de condecoración.</em>
+              </p>
+            </li>
+          </ul>
+          <p style="margin-top: 15px; font-size: 0.9rem; color: #a9a093;">
+            Investigaciones históricas señalan que figuras jerárquicas como <strong>Adolf Eichmann</strong> y <strong>Josef Schwammberger</strong> pasaron por las inmediaciones, mientras más de 1.200 ciudadanos alemanes se radicaron en La Falda en los años finales de la Segunda Guerra.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       SECCIÓN DE TERROR: EL PASEO NOCTURNO (OSCURIDAD TOTAL)
+       ======================================================================== -->
+  <section id="terror-section" class="terror-section">
+    <!-- Haz de Luz de la Linterna -->
+    <div class="flashlight-layer"></div>
+    <div class="terror-fog-bg"></div>
+
+    <div class="container terror-container">
+      <div style="text-align: center;">
+        <div class="terror-badge-warning">⚠️ EXPERIENCIA NOCTURNA EXCLUSIVA</div>
+        <h2 class="terror-title">EL PASEO DE TERROR</h2>
+        <p class="terror-subtitle">
+          Una visita guiada de carácter esotérico y místico en <strong>oscuridad total</strong>, 
+          con la única iluminación proporcionada por la linterna del guía.
+        </p>
+      </div>
+
+      <div class="terror-grid">
+        <!-- Foto de Terror provista por el usuario -->
+        <div class="terror-image-wrapper">
+          <img src="images/terror-habitacion.webp" alt="Habitación abandonada del Hotel Edén en penumbras">
+          <div class="terror-image-overlay">
+            <span class="terror-image-tag">Archivo Paranormal</span>
+            <p class="terror-image-caption">Espacios comunes y habitaciones clausuradas donde se manifiestan los fenómenos nocturnos.</p>
+          </div>
+        </div>
+
+        <!-- Especificaciones del Recorrido -->
+        <div class="terror-specs-list">
+          <div class="spec-box">
+            <div class="spec-icon ghost-accent">👻</div>
+            <div class="spec-content">
+              <h4>Dinámica del Recorrido</h4>
+              <p>
+                El circuito inicia con la proyección de un <strong>documental sobre fenómenos paranormales</strong> y leyendas urbanas del hotel. A continuación, el grupo se adentra en completa oscuridad por las antiguas habitaciones y salones desiertos donde se narran escalofriantes historias de apariciones, entre ellas la célebre <span class="spec-highlight">"Dama de Blanco"</span> y la sobrecogedora leyenda de la <span class="spec-highlight">"niña fantasma"</span>.
+              </p>
+            </div>
+          </div>
+
+          <div class="spec-box">
+            <div class="spec-icon">⏱️</div>
+            <div class="spec-content">
+              <h4>Horarios y Reserva Previa</h4>
+              <p>
+                La experiencia se lleva a cabo únicamente los días <strong>viernes y sábados</strong> en dos turnos: a las <span class="spec-highlight">21:00 hs</span> y a las <span class="spec-highlight">23:00 hs</span>. Los cupos son estrictamente limitados para conservar la atmósfera y requieren <strong>reserva previa obligatoria</strong>.
+              </p>
+            </div>
+          </div>
+
+          <div class="spec-box">
+            <div class="spec-icon">⚠️</div>
+            <div class="spec-content">
+              <h4>Restricciones y Duración</h4>
+              <p>
+                Por razones de seguridad e intensidad emocional, la actividad está <strong>estrictamente prohibida para menores de 7 años</strong>. El recorrido tiene una duración aproximada de <span class="spec-highlight">2 horas</span>.
+              </p>
+            </div>
+          </div>
+
+          <div class="spec-box">
+            <div class="spec-icon">🎟️</div>
+            <div class="spec-content">
+              <h4>Tarifa y Entradas</h4>
+              <p>
+                Entrada general: <strong>$4.000</strong> (tarifa de referencia actualizada a 2024; se sugiere consultar tarifas vigentes al momento de reservar por posibles actualizaciones).
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tarjeta de Reserva y CTA con Botones de Altura Estandarizada -->
+      <div class="terror-booking-card">
+        <div class="ticket-header">
+          <span style="letter-spacing: 0.18em; text-transform: uppercase; font-size: 0.82rem; color: #ff6666;">Pase de Acceso Nocturno</span>
+          <div class="ticket-price">$4.000 <span style="font-size: 1.05rem; color: #999; font-weight: 400;">/ persona</span></div>
+          <p class="ticket-price-sub">Cupos limitados por función · Viernes y Sábados 21:00 y 23:00 hs</p>
+        </div>
+
+        <div class="ticket-features">
+          <div class="ticket-feature-item"><span>✓</span> Oscuridad Total</div>
+          <div class="ticket-feature-item"><span>✓</span> Guía con Linterna</div>
+          <div class="ticket-feature-item"><span>✓</span> Documental Paranormal</div>
+          <div class="ticket-feature-item"><span>✓</span> Historias Reales</div>
+          <div class="ticket-feature-item"><span>✓</span> Duración: 2 Horas</div>
+        </div>
+
+        <div class="ticket-cta-group">
+          <button class="btn btn-tour btn-terror open-booking-modal-btn">
+            <span>🎟️</span> Reservar Turno
+          </button>
+          <button class="btn btn-tour btn-terror-ghost" onclick="handleSmartContact('Hola, deseo consultar disponibilidad para el Paseo Nocturno de Terror')">
+            <span>💬</span> Consultar Disponibilidad
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       GALERÍA FOTOGRÁFICA HISTÓRICA & PARANORMAL
+       ======================================================================== -->
+  <section id="galeria" class="section-aged">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-pretitle">Registro Visual y Testimonial</span>
+        <h2 class="section-title">Galería del Eden Hotel</h2>
+        <div class="ornament-divider"><span>◆</span></div>
+        <p class="section-desc">
+          Explora los rincones emblemáticos, la imponente arquitectura centenaria y los salones donde el tiempo se detuvo.
+        </p>
+      </div>
+
+      <div class="gallery-grid">
+        <div class="gallery-card">
+          <img src="images/fachada-principal.jpg" alt="Fachada del Eden Hotel rodeada de vegetación" class="gallery-card-thumb">
+          <div class="gallery-zoom-badge">🔍</div>
+          <div class="gallery-card-info">
+            <span class="gallery-card-category">Arquitectura Monumental</span>
+            <h4 class="gallery-card-title">Fachada Histórica &amp; Parque Centenario</h4>
+          </div>
+        </div>
+
+        <div class="gallery-card">
+          <img src="images/fachada-fuente-leon.jpg" alt="Fuente de mármol y estatua de león frente al hotel" class="gallery-card-thumb">
+          <div class="gallery-zoom-badge">🔍</div>
+          <div class="gallery-card-info">
+            <span class="gallery-card-category">Belle Époque</span>
+            <h4 class="gallery-card-title">Fuente de Mármol &amp; León Custodio</h4>
+          </div>
+        </div>
+
+        <div class="gallery-card">
+          <img src="images/parque-fuente.jpg" alt="Vista del parque y fuente desde el hotel" class="gallery-card-thumb">
+          <div class="gallery-zoom-badge">🔍</div>
+          <div class="gallery-card-info">
+            <span class="gallery-card-category">Panorámica Superior</span>
+            <h4 class="gallery-card-title">Avenida del Parque &amp; Bosque Europeo</h4>
+          </div>
+        </div>
+
+        <div class="gallery-card">
+          <img src="images/patio-anfiteatro.jpg" alt="Patio exterior y escenario anfiteatro" class="gallery-card-thumb">
+          <div class="gallery-zoom-badge">🔍</div>
+          <div class="gallery-card-info">
+            <span class="gallery-card-category">Espacios Exteriores</span>
+            <h4 class="gallery-card-title">Patio de Eventos &amp; Terraza Balconada</h4>
+          </div>
+        </div>
+
+        <div class="gallery-card" style="border-color: #5c1818;">
+          <img src="images/terror-habitacion.webp" alt="Habitación abandonada escenario del paseo nocturno" class="gallery-card-thumb">
+          <div class="gallery-zoom-badge" style="background: rgba(192,24,24,0.8);">👻</div>
+          <div class="gallery-card-info">
+            <span class="gallery-card-category" style="color: #ff4d4d;">Circuito Paranormal</span>
+            <h4 class="gallery-card-title">Salón en Penumbras · La Niña Fantasma</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       UBICACIÓN, CONTACTO INTELIGENTE Y MAPA
+       ======================================================================== -->
+  <section id="contacto" class="contact-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-pretitle">Planifica tu Visita</span>
+        <h2 class="section-title">Ubicación y Canales de Contacto</h2>
+        <div class="ornament-divider"><span>◆</span></div>
+        <p class="section-desc">
+          Encuentra cómo llegar al Eden Hotel en las sierras cordobesas y contáctate directamente para visitas y reservas.
+        </p>
+      </div>
+
+      <div class="contact-layout">
+        <!-- Tarjeta de Datos de Contacto -->
+        <div class="contact-card">
+          <h3>Información del Complejo</h3>
+          
+          <div class="contact-items-list">
+            <!-- Dirección exacta pedida por el usuario con link a Google Maps -->
+            <div class="contact-item">
+              <div class="contact-icon">📍</div>
+              <div class="contact-detail">
+                <h4>Dirección Oficial</h4>
+                <p style="margin-bottom: 12px;">Eden Avenue 1400, X5172 La Falda, Córdoba</p>
+                <a href="https://www.google.com/maps/search/?api=1&query=Eden+Avenue+1400,+X5172+La+Falda,+C%C3%B3rdoba" 
+                   target="_blank" 
+                   rel="noopener noreferrer" 
+                   class="btn btn-contact btn-maps">
+                  <span>🗺️</span> Abrir en Google Maps
+                </a>
+              </div>
+            </div>
+
+            <!-- Coordenadas -->
+            <div class="contact-item">
+              <div class="contact-icon">🌐</div>
+              <div class="contact-detail">
+                <h4>Coordenadas Geográficas</h4>
+                <p>31°05′30″S 64°28′02″O</p>
+                <span style="font-size: 0.85rem; color: #777;">Al pie del cerro El Cuadrado, Punilla</span>
+              </div>
+            </div>
+
+            <!-- Teléfono / WhatsApp Inteligente pedido por el usuario -->
+            <div class="contact-item">
+              <div class="contact-icon">📞</div>
+              <div class="contact-detail">
+                <h4>Teléfono de Contacto y Reservas</h4>
+                <p style="font-size: 1.3rem; color: var(--vintage-gold); font-weight: 800; margin-bottom: 8px;">
+                  03548-426643
+                </p>
+                
+                <div class="phone-action-box">
+                  <h5>Opciones de Comunicación:</h5>
+                  <div class="phone-buttons-row">
+                    <button class="btn btn-contact btn-whatsapp-smart" onclick="openWhatsApp('Hola, deseo información sobre las visitas al Hotel Edén')">
+                      <span>💬</span> WhatsApp
+                    </button>
+                    <button class="btn btn-contact btn-phone-call" onclick="callDirectPhone()">
+                      <span>📞</span> Llamar al Numeral
+                    </button>
+                  </div>
+                  <p style="font-size: 0.78rem; color: #777; margin-top: 10px;">
+                    * En PC abrirá WhatsApp Web o copiará el número; en móvil te conectará por WhatsApp o abrirá tu marcador telefónico.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Sitio Web Oficial -->
+            <div class="contact-item">
+              <div class="contact-icon">🏛️</div>
+              <div class="contact-detail">
+                <h4>Sitio Web Municipal Oficial</h4>
+                <p>
+                  <a href="https://edenhotellafalda.com.ar/" target="_blank" rel="noopener noreferrer">
+                    https://edenhotellafalda.com.ar/
+                  </a>
+                </p>
+                <span style="font-size: 0.85rem; color: #777;">Propiedad de la Municipalidad de La Falda</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contenedor del Mapa Visual -->
+        <div class="map-container-box">
+          <div class="map-header">
+            <h4>Mapa Satelital y de Rutas</h4>
+            <a href="https://www.google.com/maps/search/?api=1&query=Eden+Avenue+1400,+X5172+La+Falda,+C%C3%B3rdoba" 
+               target="_blank" 
+               rel="noopener noreferrer" 
+               style="font-size: 0.85rem; color: var(--vintage-gold); font-weight: 700; text-decoration: none;">
+              Ver Pantalla Completa ↗
+            </a>
+          </div>
+          <div class="map-embed-wrapper">
+            <iframe 
+              src="https://maps.google.com/maps?q=Eden+Avenue+1400,+X5172+La+Falda,+Cordoba,+Argentina&t=&z=16&ie=UTF8&iwloc=&output=embed" 
+              loading="lazy" 
+              title="Ubicación Eden Hotel en Google Maps">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       FOOTER OFICIAL
+       ======================================================================== -->
+  <footer class="main-footer">
+    <div class="container footer-grid">
+      <div class="footer-col footer-about">
+        <h4>EDEN HOTEL (1898)</h4>
+        <p>
+          Emblema arquitectónico, histórico y cultural del Valle de Punilla. 
+          Monumento Histórico Municipal administrado con dedicación para preservar el patrimonio 
+          y las leyendas que forjaron la identidad de la República Argentina.
+        </p>
+        <p style="font-size: 0.85rem; color: #888;">
+          📍 Eden Avenue 1400, X5172 La Falda, Córdoba · 📞 03548426643
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Secciones</h4>
+        <ul class="footer-links-list">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#historia">Fundación (1897)</a></li>
+          <li><a href="#arquitectura">Belle Époque</a></li>
+          <li><a href="#huespedes">Huéspedes de Honor</a></li>
+          <li><a href="#archivos">Documentos del FBI</a></li>
+          <li><a href="#terror-section">Paseo de Terror</a></li>
+          <li><a href="#galeria">Fotografías</a></li>
+          <li><a href="#contacto">Cómo Llegar</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Enlaces de Interés</h4>
+        <ul class="footer-links-list">
+          <li><a href="https://edenhotellafalda.com.ar/" target="_blank" rel="noopener">Sitio Oficial La Falda</a></li>
+          <li><a href="https://www.google.com/maps/search/?api=1&query=Eden+Avenue+1400,+X5172+La+Falda,+C%C3%B3rdoba" target="_blank" rel="noopener">Google Maps</a></li>
+          <li><a href="javascript:void(0)" onclick="openWhatsApp()">Reserva por WhatsApp</a></li>
+          <li><a href="javascript:void(0)" onclick="callDirectPhone()">Llamada Directa</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>© 1898 – 2026 Eden Hotel · La Falda, Córdoba, Argentina. Todos los derechos preservados.</p>
+    </div>
+  </footer>
+
+  <!-- ========================================================================
+       MODAL DE RESERVA PARA EL PASEO DE TERROR
+       ======================================================================== -->
+  <div id="booking-modal" class="modal-backdrop">
+    <div class="modal-card">
+      <button id="close-booking-btn" class="modal-close-btn" aria-label="Cerrar modal">&times;</button>
+      <h3 style="font-family: var(--font-serif-title); color: #ff4d4d; font-size: 1.4rem; margin-bottom: 8px;">
+        Reserva: Paseo de Terror Nocturno
+      </h3>
+      <p style="font-size: 0.85rem; color: #a5a5b5; margin-bottom: 20px;">
+        Visita guiada en oscuridad total · Prohibido menores de 7 años.
+      </p>
+
+      <form id="tour-booking-form">
+        <div class="form-group">
+          <label for="booking-day">Día de la Visita:</label>
+          <select id="booking-day" class="form-control" required>
+            <option value="Viernes">Viernes</option>
+            <option value="Sábado">Sábado</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="booking-time">Horario:</label>
+          <select id="booking-time" class="form-control" required>
+            <option value="21:00">21:00 hs (Primer turno)</option>
+            <option value="23:00">23:00 hs (Segundo turno en medianoche)</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="booking-pax">Cantidad de Personas (+7 años):</label>
+          <input type="number" id="booking-pax" class="form-control" min="1" max="25" value="2" required>
+        </div>
+
+        <div style="background: #1c1317; border: 1px solid #4a1515; padding: 12px; border-radius: 6px; margin-bottom: 18px;">
+          <span style="font-size: 0.78rem; text-transform: uppercase; color: #aaa;">Total Estimado ($4.000 c/u):</span>
+          <div id="booking-total-display" style="font-size: 1.6rem; font-weight: 800; color: #ff5252;">$8.000</div>
+          <span style="font-size: 0.72rem; color: #888;">* Sujeto a confirmación de cupo por la administración.</span>
+        </div>
+
+        <button type="submit" class="btn btn-terror" style="width: 100%;">
+          <span>💬</span> Continuar Reserva por WhatsApp
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       MODAL LIGHTBOX PARA FOTOGRAFÍAS
+       ======================================================================== -->
+  <div id="lightbox-modal" class="lightbox-modal">
+    <button id="lightbox-close" class="lightbox-close" aria-label="Cerrar foto">&times;</button>
+    <img id="lightbox-img" class="lightbox-img" src="" alt="Vista ampliada">
+    <div id="lightbox-caption" class="lightbox-caption"></div>
+  </div>
+
+  <!-- Botón Flotante de WhatsApp / Contacto Rápido -->
+  <div class="floating-contact-btn" onclick="handleSmartContact()" title="Contactar por WhatsApp o Teléfono (03548426643)">
+    <svg viewBox="0 0 24 24">
+      <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+    </svg>
+  </div>
+
+  <!-- Toast Notificaciones -->
+  <div id="toast-notification" class="toast-notification"></div>
+
+  <!-- Script Principal -->
+  <script src="script.js"></script>
+</body>
+</html>
